@@ -63,3 +63,17 @@ FOSS 2020 tutorial
 
 ## Update user permissions
 Switch back to main user, and run  `sudo usermod -aG docker $USER`. Then log out and log back in. This is necessary to avoid permissions issues when trying to run `docker` as the non-root user.
+
+## Setting up iRODS tools
+    wget https://files.renci.org/pub/irods/releases/4.1.12/ubuntu14/irods-icommands-4.1.12-ubuntu14-x86_64.deb
+    apt-get install ./irods-icommands-4.1.12-ubuntu14-x86_64.deb
+
+as non-root user:
+    
+    iinit
+    Enter the host name (DNS) of the server to connect to: data.cyverse.org
+    Enter the port number: 1247
+    Enter your irods user name: ____
+    Enter your irods zone: iplant
+
+    
