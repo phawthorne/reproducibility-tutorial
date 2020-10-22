@@ -2,7 +2,7 @@
 FOSS 2020 tutorial
 
 ## Set-up commands
-'''
+
     #download the Miniconda installer
     wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 
@@ -60,4 +60,6 @@ FOSS 2020 tutorial
     #test docker
     docker run hello-world
 
-'''
+
+## Update user permissions
+Switch back to main user, and run  `sudo usermod -aG docker $USER`. Then log out and log back in. This is necessary to avoid permissions issues when trying to run `docker` as the non-root user.
